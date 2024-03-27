@@ -31,6 +31,12 @@ const questions = [
         type:"input",
         name:"file_name",
         message:"What would you like your file name to be?"
+    },
+    {
+        type:"list",
+        name:"license",
+        message:"Which license will you be using?",
+        choices:["MIT", "Apache", "none"]
     }
 ];
 
