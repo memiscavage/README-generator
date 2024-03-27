@@ -36,7 +36,17 @@ const questions = [
     {
         type:"input",
         name:"installation",
-        message:"What are the installation instructions for the project?"
+        message:"Please provide step-by-step installation instructions for your project."
+    },
+    {
+        type:"input",
+        name:"usage",
+        message:"Please provide instructions for using your project"
+    },
+    {
+        type:"input",
+        name:"credits",
+        message:"Please list any collaborators on your project, along with links to their GitHub profiles"
     },
     {
         type:"list",
