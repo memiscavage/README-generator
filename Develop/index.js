@@ -31,12 +31,12 @@ const questions = [
     {
         type:"input",
         name:"description",
-        message:"Please describe your project"
+        message:"Please describe your project."
     },
     {
         type:"input",
         name:"installation",
-        message:"What type of installation"
+        message:"What are the installation instructions for the project?"
     },
     {
         type:"list",
