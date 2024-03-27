@@ -44,6 +44,15 @@ function renderLicenseSection(license) {
 
 // TODO: Add function to create table of contents for README
 
+function createTableOfContents(tableOfContents) {
+  if (tableOfContents==="Yes"){
+    return `[Installation](#installation) / [Usage](#usage) / [Credits](#credits) / [License](#license)`
+  }
+  if (tableOfContents==="No"){
+    return ``
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -55,6 +64,8 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
+  
+  ${createTableOfContents(data.tableOfContents)}
 
   ## Installation
 
