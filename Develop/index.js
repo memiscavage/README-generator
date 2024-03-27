@@ -13,6 +13,17 @@ const fs = require("fs")
 //
 const questions = [
     {
+        type:"input",
+        name:"file_name",
+        message:"What would you like your file name to be?"
+    },
+    {
+        type:"list",
+        name:"tableOfContents",
+        message:"Would you like a table of contents?",
+        choices:["Yes", "No"]
+    },
+    {
         type:"input", 
         name:"title",
         message: "What is the title of your project?"
@@ -26,11 +37,6 @@ const questions = [
         type:"input",
         name:"installation",
         message:"What type of installation"
-    },
-    {
-        type:"input",
-        name:"file_name",
-        message:"What would you like your file name to be?"
     },
     {
         type:"list",
