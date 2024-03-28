@@ -50,6 +50,7 @@ function createTableOfContents(tableOfContents) {
   }
   if (tableOfContents==="No"){
     return ``
+    //Actually.... lets have if yes return ## table of contents since no wont need that header
   }
 }
 
@@ -64,7 +65,7 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-  
+
   ${createTableOfContents(data.tableOfContents)}
 
   ## Installation
