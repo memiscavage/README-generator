@@ -46,11 +46,11 @@ function renderLicenseSection(license) {
 
 function createTableOfContents(tableOfContents) {
   if (tableOfContents==="Yes"){
-    return `[Installation](#installation) / [Usage](#usage) / [Credits](#credits) / [License](#license)`
+    return `## Table of Contents [Installation](#installation) / [Usage](#usage) / [Credits](#credits) / [License](#license)`
   }
   if (tableOfContents==="No"){
     return ``
-    //Actually.... lets have if yes return ## table of contents since no wont need that header
+    
   }
 }
 
@@ -64,13 +64,19 @@ function generateMarkdown(data) {
 
   ${data.description}
 
-  ## Table of Contents
-
   ${createTableOfContents(data.tableOfContents)}
 
   ## Installation
 
   ${data.installation}
+
+  ## Usage
+
+  ${data.usage}
+
+  ## Credits
+
+  ${data.credits}
 
   ## License
 
