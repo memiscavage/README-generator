@@ -41,12 +41,12 @@ const questions = [
     {
         type:"input",
         name:"usage",
-        message:"Please provide instructions for using your project"
+        message:"Please provide instructions for using your project."
     },
     {
         type:"input",
         name:"credits",
-        message:"Please list any collaborators on your project, along with links to their GitHub profiles"
+        message:"Please list any collaborators on your project, along with links to their GitHub profiles."
     },
     {
         type:"list",
