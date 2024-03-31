@@ -46,7 +46,7 @@ function renderLicenseSection(license) {
 
 function createTableOfContents(tableOfContents) {
   if (tableOfContents==="Yes"){
-    return `* [Installation](#installation) \ * [Usage](#usage) \ * [Credits](#credits) \ * [License](#license)`
+    return `## Table of Contents \n * [Installation](#installation) \n * [Usage](#usage) \n * [Credits](#credits) \n * [License](#license)`
   }
   if (tableOfContents==="No"){
     return ``
@@ -63,8 +63,6 @@ function generateMarkdown(data) {
   ## Description
 
   ${data.description}
-
-  ## Table of Contents
 
   ${createTableOfContents(data.tableOfContents)}
 
