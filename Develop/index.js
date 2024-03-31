@@ -53,6 +53,11 @@ const questions = [
         name:"license",
         message:"Which license will you be using?",
         choices:["MIT", "Apache", "none"]
+    },
+    {
+        type:"input",
+        name:"questions",
+        message:"Please enter your contact information should users have any questions for you."
     }
 ];
 
