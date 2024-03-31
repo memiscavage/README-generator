@@ -46,7 +46,7 @@ function renderLicenseSection(license) {
 
 function createTableOfContents(tableOfContents) {
   if (tableOfContents==="Yes"){
-    return `## Table of Contents \ [Installation](#installation) \ * [Usage](#usage) \ * [Credits](#credits) \ * [License](#license)`
+    return `* [Installation](#installation) \ * [Usage](#usage) \ * [Credits](#credits) \ * [License](#license)`
   }
   if (tableOfContents==="No"){
     return ``
@@ -64,6 +64,8 @@ function generateMarkdown(data) {
 
   ${data.description}
 
+  ## Table of Contents
+
   ${createTableOfContents(data.tableOfContents)}
 
   ## Installation
@@ -74,7 +76,7 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
-  ## Credits
+  ## Credits/Contributions
 
   ${data.credits}
 
@@ -82,6 +84,10 @@ function generateMarkdown(data) {
 
   ${renderLicenseLink(data.license)}
   ${renderLicenseSection(data.license)}
+
+  ## Questions?
+
+  ${`Please message me at ` + data.questions + `.`}
 `;
 
 }
